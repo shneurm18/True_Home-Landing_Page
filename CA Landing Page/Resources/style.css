@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+}
+/*header_section*/
+.navigation header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px 0;
+    border-bottom: 4px solid rgba(81, 81, 81, 1);
+}
+#logo {  
+  font-family: Karma;  
+  color: rgba(3, 144, 88, 1);  
+}  
+  
+#navigation {  
+  list-style: none;  
+  display: flex;  
+  justify-content: space-evenly;  
+  width: 20%;  
+  padding-top: 10px;  
+}  
+  
+#navigation li {  
+  font-size: 1.5em;  
+  color: rgba(3, 144, 88, 1);  
+}
+/*Banner Section*/
+.banner {
+    background-image: url('../Resources/images/banner_img..jpg');
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    border-bottom: 4px solid rgba(81, 81, 81, 1);
+}
+
+.banner-text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mission-statement {
+    color: rgba(253, 255, 244, 1);
+    font-family: Roboto serif;
+    text-align: center;
+}
+/* Product Section*/
+.product-section {
+    background-color: rgba(235, 255, 231, 0.43);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#hook {
+    font-family: Roboto serif;
+    font-style: italic;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.product-images img {
+    width: 345px;
+    height: 303px;
+    margin: 0 20px;
+}
+
+.product-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    font-family: Poppins;
+    font-style: italic;
+    font-size: 32px;
+    margin-left: 20px;
+}
+.product-text p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*employee information section*/
+.employee-section {
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(236, 236, 236, 1);
+}
+
+.employee-info {
+    width: 930px;
+}
+
+.employee-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.employee-imgs img {
+    height: 236px;
+    width: 236px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px dotted rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.employee-desc {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+    font-size: 26px;
+}
+
+.employee-desc p {
+    width: 238px;
+    margin: 10px;
+}
+/*footer*/
+footer {
+    height: 78px;
+    border-top: 2px solid rgba(81, 81, 81, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-family: Roboto serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #navigation {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navigation li {
+        margin-bottom: 10px;
+    }
+
+    .product-images img {
+        width: calc(50% - 20px);
+    }
+
+    .employee-imgs img {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-images img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .employee-imgs img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .product-text p {
+        width: 100%;
+    }
+
+    .employee-desc p {
+        width: 100%;
+    }
+}
